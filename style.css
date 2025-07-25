@@ -1,0 +1,144 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1619023951546-d8a106b1c159') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 36px;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #66bb6a;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Section styles */
+.section {
+  padding: 40px 10%;
+  background-color: #fff;
+  margin: 20px 0;
+}
+
+/* List styles */
+ul {
+  list-style: disc inside;
+}
+
+/* Footer styles */
+footer {
+  background-color: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 20px 10%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .section {
+    padding: 30px 8%;
+  }
+
+  footer {
+    padding: 20px 8%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  nav a {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .hero .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .section {
+    padding: 20px 5%;
+  }
+
+  footer {
+    padding: 20px 5%;
+    font-size: 14px;
+  }
+}
+
